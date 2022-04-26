@@ -23,7 +23,7 @@
  */
 
 
-
+//the main function
 int main(int argc, char** argv) {
  
     srand(time(NULL));
