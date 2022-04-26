@@ -31,8 +31,3 @@ void play_game(square board[NUM_ROWS][NUM_COLUMNS], player players[], int numPla
 void push(square board[NUM_ROWS][NUM_COLUMNS], int i, int j, struct token *top);
 //The function prototype for the pop function
 void pop(square board[NUM_ROWS][NUM_COLUMNS], int i, int j, struct token *top);
-
-
-
-
-
