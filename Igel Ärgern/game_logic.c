@@ -257,8 +257,8 @@ void play_game(square board[NUM_ROWS][NUM_COLUMNS], player players[], int numPla
             printf("Would you like to do the optional move? (Move one of your tokens 'sideways').\n");
             printf("1 for yes, 0 for no: ");
             scanf("%d", &optionalMove);
-            clock_t t6=clock();
-    printf("The start time of optional move for one player taken is.. %f \n",((double)t6/CLOCKS_PER_SEC));
+          /*  clock_t t6=clock();
+    printf("The start time of optional move for one player taken is.. %f \n",((double)t6/CLOCKS_PER_SEC));*/
             //while loop will enter since optionalMove does not equal 1 or 0
             while (optionalMove != 0 && optionalMove != 1)
             {
@@ -274,8 +274,8 @@ void play_game(square board[NUM_ROWS][NUM_COLUMNS], player players[], int numPla
                 scanf("%d", &rowOptional);
                 printf("\nColumn: ");
                 scanf("%d", &columnOptional);
-   clock_t t4=clock();
-    printf("The start time of side move for one player taken is.. %f \n",((double)t4/CLOCKS_PER_SEC));
+  /* clock_t t4=clock();
+    printf("The start time of side move for one player taken is.. %f \n",((double)t4/CLOCKS_PER_SEC));*/
                 //Keep asking the user until he chooses a square that has a token on it
                 while (board[rowOptional][columnOptional].numTokens == 0)
                 {
@@ -404,8 +404,8 @@ void play_game(square board[NUM_ROWS][NUM_COLUMNS], player players[], int numPla
                         board[rowOptional][columnOptional].numTokens--; //Decrement the number of tokens of the optional square
                     }
                 }
-           clock_t t5=clock();
-    printf("The end time of side move for one player taken is.. %f \n",((double)(t5-t4)/CLOCKS_PER_SEC)); }
+         /*  clock_t t5=clock();
+    printf("The end time of side move for one player taken is.. %f \n",((double)(t5-t4)/CLOCKS_PER_SEC));*/ }
 
 
             print_board(board); //Printing the board
@@ -434,8 +434,8 @@ void play_game(square board[NUM_ROWS][NUM_COLUMNS], player players[], int numPla
                     sum += board[dice][rowCheck].numTokens;
                 }
             }
-                clock_t t7=clock();
-                printf("The end time of optional move for one player taken is.. %f \n",((double)(t7-t6)/CLOCKS_PER_SEC));
+               /* clock_t t7=clock();
+                printf("The end time of optional move for one player taken is.. %f \n",((double)(t7-t6)/CLOCKS_PER_SEC));*/
 
 
             //PART C
@@ -450,8 +450,8 @@ void play_game(square board[NUM_ROWS][NUM_COLUMNS], player players[], int numPla
                 printf("\nSelect a valid column: ");
                 scanf("%d", &mandatoryColumn);
             }
-clock_t t8=clock();
-printf("The start time of mandatory move for one player taken is.. %f \n",((double)t8/CLOCKS_PER_SEC));
+/*clock_t t8=clock();
+printf("The start time of mandatory move for one player taken is.. %f \n",((double)t8/CLOCKS_PER_SEC)); */
             while (mandatoryColumn < 0 || mandatoryColumn > 7)
             {
                 printf("\nSelect a valid column: ");
@@ -536,13 +536,11 @@ printf("The start time of mandatory move for one player taken is.. %f \n",((doub
                     board[dice][mandatoryColumn].type = NORMAL;
                 }
             }
-clock_t t9=clock();
-printf("The end time of mandatory move for one player taken is.. %f \n",((double)(t9-t8)/CLOCKS_PER_SEC));
+/*clock_t t9=clock();
+printf("The end time of mandatory move for one player taken is.. %f \n",((double)(t9-t8)/CLOCKS_PER_SEC));*/
 
 
             printf("\nYou chose to move the token in position (%d, %d) one column forward!", dice, mandatoryColumn);
-            //board[dice][mandatoryColumn+1].stack = (token *) malloc(sizeof(token));
-            //board[dice][mandatoryColumn+1].stack->col = board[dice][mandatoryColumn].stack->col;
             token *t = (token *) malloc(sizeof(token)); //Allocating space for the pointer t which points to the token
             t->col = board[dice][mandatoryColumn].stack->col; //Assigning the token color from the stack to the pointer color pointing to t
             t->next = NULL; //Assigning the next which points to t as NULL
