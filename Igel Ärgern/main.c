@@ -10,7 +10,6 @@
 int main(int argc, char** argv) {
 
     clock_t t1=clock();
-    Your code that takes more than 1 sec;
    printf("The start time taken is.. %f \n",((double)t1/CLOCKS_PER_SEC));
 
     srand(time(NULL));
