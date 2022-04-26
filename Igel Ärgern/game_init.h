@@ -1,15 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   newfile.h
- * Author: lpasqua
- *
- * Created on 06 March 2019, 12:18
- */
+#include <stdbool.h>
 
 //number of rows of the board
 #define NUM_ROWS 6
@@ -75,6 +64,14 @@ void initialize_board(square board[NUM_ROWS][NUM_COLUMNS]);
  *
  */
 int initialize_players(player players[]);
+
+/*
+ * This function allows the players to select the color of token
+ * and prevents selecting the same color.
+ * Input:
+ *
+ */
+void colorSelection(player players[], bool flag[], int playerNumb);
 
 
 
