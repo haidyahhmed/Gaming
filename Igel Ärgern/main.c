@@ -1,15 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/*
- * File:   main.c
- * Author: lpasqua
- *
- * Created on 06 March 2019, 12:11
- */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -19,13 +7,16 @@
 
 
 
-
 int main(int argc, char** argv) {
+
+    clock_t t1=clock();
+    Your code that takes more than 1 sec;
+   printf("The start time taken is.. %f \n",((double)t1/CLOCKS_PER_SEC));
 
     srand(time(NULL));
 
     //the board is defined as a 2-Dimensional array of squares
-    square board[NUM_ROWS][NUM_COLUMNS];
+    square board[NUM_ROWS][NUM_COLUMNS]; 
 
     //an array containing the players (MAX 6 players)
     player players[6];
@@ -47,9 +38,15 @@ int main(int argc, char** argv) {
     //on the first column of the board
     place_tokens(board, players, numPlayers);
 
+    //clock_t t2=clock();
+    //printf("The time taken for placing tokens is.. %f\n ", ((double)(t2-t1)/CLOCKS_PER_SEC));
+
 
     //manages the turns of the game and identifies a winner
     play_game(board, players, numPlayers);
+
+    clock_t t3=clock();
+    printf("The time taken for the Game is.. %f\n ", ((double)(t3-t1)/CLOCKS_PER_SEC));
 
     return 0;
 }
