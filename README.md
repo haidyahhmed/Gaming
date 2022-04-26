@@ -12,4 +12,4 @@
 - You cannot move your piece unless it is on the top of the stack.
 - You cannot move your piece if it is placed on an obstacke.
 - You can only pass the obstacle when there are no pieces before the piece on obstacle.
-# time execution
+
