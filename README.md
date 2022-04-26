@@ -16,4 +16,10 @@
 - You cannot move your piece unless it is on the top of the stack.
 - You cannot move your piece if it is placed on an obstacke.
 - You can only pass the obstacle when there are no pieces before the piece on obstacle.
-
+# Time Excution & Parameters
+- The change of time with the state of the piece:
+  if the piece is place on an obstacle square the time of getting suitable move increases compared to normal square
+  In a normal square it takes a very small time (2000 usec ~ 0.002 sec)
+  ![Screenshot 2022-04-27 0118211](https://user-images.githubusercontent.com/104442250/165408268-5f569d03-8d98-4624-ae88-7549257d5356.png)
+In an obstacle square it takes much time (2894000 usec ~ 2.894 sec)
+![Screenshot 2022-04-27 0122491](https://user-images.githubusercontent.com/104442250/165408617-3b0f8025-649c-4b7b-9b8b-116f4b772c3c.png)
