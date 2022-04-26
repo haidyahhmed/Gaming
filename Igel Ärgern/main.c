@@ -10,7 +10,7 @@
  *
  * Created on 06 March 2019, 12:11
  */
-// the main code
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
