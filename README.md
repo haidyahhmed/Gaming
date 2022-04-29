@@ -9,7 +9,7 @@
 - there are 6 obstacles or pits in the board. (one obstacle in each lane or row)
 - To set up the game, Each player gets four tokens of a single color that he or she must move from the "start" column to the "ziel" column.
 - The goal of the game is to have all the your "hedgehogs" start at the "start" column and be the first to get three of your four hedgehogs to the finish line ("ziel" column).
-![index](https://user-images.githubusercontent.com/104442250/165404529-6247eefd-edf8-4698-b788-de101e997d87.jpg)
+- ![index](https://user-images.githubusercontent.com/104442250/165404529-6247eefd-edf8-4698-b788-de101e997d87.jpg)
 
 # Instructions and rules of the game:
 - pieces sharing a square stack on top of each other.
