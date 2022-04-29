@@ -45,11 +45,12 @@
 
   - In **an obstacle square** it takes much time **(2894000 usec ~ 2.894 sec)**.
 ![Screenshot 2022-04-27 0122491](https://user-images.githubusercontent.com/104442250/165408617-3b0f8025-649c-4b7b-9b8b-116f4b772c3c.png)
-•	**The change of time with** the optional move : If the player do the optional move it will take more time than if he don’t.
-o	If the player don’t do it ,the time will be very small (0.016 usec ~ 1.6x10^-8 sec)
+•	**The change of time with** the optional move :
+If the player do the optional move it will take more time than if he don’t.
+-	If the player don’t do it ,the time will be very small (0.016 usec ~ 1.6x10^-8 sec)
   ![image](https://user-images.githubusercontent.com/103963089/166080923-38637642-51f3-495e-a22b-04ed1adc644e.png)
 
-o	If the player do it ,the time will increase (26.1 usec ~ 2.61x10^-5  sec)
+-	If the player do it ,the time will increase (26.1 usec ~ 2.61x10^-5  sec)
   ![image](https://user-images.githubusercontent.com/103963089/166080934-6c718d89-ce70-43f5-bd81-66886f0c1c6b.png)
 
 
