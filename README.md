@@ -14,6 +14,7 @@
 # Instructions and rules of the game:
 - pieces sharing a square stack on top of each other.
 - In turn order, Each player puts down one token in the "start" column but you do not stack a piece on top of another piece until all the other places in the column is filled. (you have to place the tokens in a balanced way. you always have to place it on one of the shortest stacks, unless it already has one of your pieces) 
+- while placing the tokens in the "start", you cannot put two of the same color on top of each other. 
 - In case of stack, the only piece that can be moved is the piece on the top.
 - You cannot move your piece if it is placed on an obstacke until there are no pieces left behind, then the obstackle square turns into normal square.
 - After rolling the die, if it was matched with empty lane/raw, has no tokens in it, you have to roll the die again until it matches with suitable lane.   
