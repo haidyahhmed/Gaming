@@ -20,7 +20,7 @@
 
 # How to play:
 - A turn consists of: 
-  - rollind the die,
+  - rolling the die,
   - optionally moves one of his pieces up or down one row (we call this a "sideways" move, because the piece is moved sideways relative to the direction of travel toward the finish line), 
   - and then moving an piece (either his/her or another player) that in the matching lane with die forward one space.
  - The first player gets three of his/her tokens to the "ziel" is the winner.   
