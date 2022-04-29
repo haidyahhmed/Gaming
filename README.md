@@ -4,12 +4,12 @@
   - 24 identical tokens (representing hedgehogs) with different colors (Red - Blue - Green - Yellow - Pink - Orange).
   - A board with 6 rows and 9 columns. 
   - Die. 
-- the first column of the board is called "start" where the players place their tokens. 
-- the last column of the board is called "ziel" which means goal or target.
-- there are 6 obstacles or pits in the board. (one obstacle in each lane or row)
+- The first column of the board is called "start" where the players place their tokens. 
+- The last column of the board is called "ziel" which means goal or target.
+- There are 6 obstacles or pits in the board. (one obstacle in each lane or row)
 - To set up the game, Each player gets four tokens of a single color that he or she must move from the "start" column to the "ziel" column.
 - The goal of the game is to have all the your "hedgehogs" start at the "start" column and be the first to get three of your four hedgehogs to the finish line ("ziel" column).
-- ![board](https://user-images.githubusercontent.com/104447022/165998723-21052cf1-8a62-4293-995a-ab0f19daee01.png)
+- ![board](https://user-images.githubusercontent.com/104447022/165999406-a91dfc5a-639e-437f-9061-980b85ba72bb.png)
 
 # Instructions and rules of the game:
 - pieces sharing a square stack on top of each other.
@@ -28,13 +28,13 @@
 # Time Excution & Parameters
 - **The change of time with the number of players:**
   The more players there are, the more time the game takes.
-  - The Time it takes for **two players** to place their tokens **(~ 64.404 sec)**.
+  - The time it takes for **two players** to place their tokens **(~ 64.404 sec)**.
   ![2players](https://user-images.githubusercontent.com/104447022/165968653-48bb5b25-c99e-4bfd-8f26-582b855338f3.png)
 
-  - The Time it takes for **four players** to place their tokens **(~ 127.048 sec)**.
+  - The time it takes for **four players** to place their tokens **(~ 127.048 sec)**.
   ![4players](https://user-images.githubusercontent.com/104447022/165968716-a7718701-4787-4cb5-b310-a5ab3446546f.png)
 
-  - The Time it takes for **six players** to place their tokens **(~ 277.644 sec)**.
+  - The time it takes for **six players** to place their tokens **(~ 277.644 sec)**.
   ![6 players](https://user-images.githubusercontent.com/104447022/165968816-b57faa7e-0099-42af-830c-1c6e1aad4e8e.png)
 
 - **The change of time with the state of the piece:**
