@@ -17,15 +17,15 @@
 - You cannot move your piece if it is placed on an obstacke.
 - You can only pass the obstacle when there are no pieces before the piece on obstacle.
 # Time Excution & Parameters
-- **The change of time with the number of players:**
-  The more players there are, the more time the game takes.
-  The Time it takes for **two players** to place their tokens **(~ 64.404 sec)**.
+  # **The change of time with the number of players:**
+  - The more players there are, the more time the game takes.
+  - The Time it takes for **two players** to place their tokens **(~ 64.404 sec)**.
   ![2players](https://user-images.githubusercontent.com/104447022/165968653-48bb5b25-c99e-4bfd-8f26-582b855338f3.png)
 
-  The Time it takes for **four players** to place their tokens **(~ 127.048 sec)**.
+  - The Time it takes for **four players** to place their tokens **(~ 127.048 sec)**.
   ![4players](https://user-images.githubusercontent.com/104447022/165968716-a7718701-4787-4cb5-b310-a5ab3446546f.png)
 
-  The Time it takes for **six players** to place their tokens **(~ 277.644 sec)**.
+  - The Time it takes for **six players** to place their tokens **(~ 277.644 sec)**.
   ![6 players](https://user-images.githubusercontent.com/104447022/165968816-b57faa7e-0099-42af-830c-1c6e1aad4e8e.png)
 
 - **The change of time with the state of the piece:**
