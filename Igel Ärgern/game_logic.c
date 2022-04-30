@@ -537,7 +537,7 @@ printf("The start time of mandatory move for one player taken is.. %f \n",((doub
                 }
             }
 /*clock_t t9=clock();
-printf("The end time of mandatory move for one player taken is.. %f \n",((double)(t9-t8)/CLOCKS_PER_SEC));*/
+printf("The end time of mandatory move for one player taken is.. %f \n",((double)(t9-t8)/CLOCKS_PER_SEC)*1000000);*/ //in micro seconds
 
 
             printf("\nYou chose to move the token in position (%d, %d) one column forward!", dice, mandatoryColumn);
