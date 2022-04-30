@@ -55,5 +55,7 @@
 
 - **The change of time with the optional move according to the type of the square:**
   - If the player do the optional move while the piece is at **an obstacle square**.
-  
+  ![1](https://user-images.githubusercontent.com/104447129/166118076-e31438ae-3207-4512-bd01-0b6ad083efbd.png)
+- If the player do the optional move **at his turn** while the piece is at **a normal square**.
+
 
