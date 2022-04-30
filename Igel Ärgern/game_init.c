@@ -3,12 +3,17 @@
 #include <string.h>
 #include <stdbool.h>
 
+#define Max_Input 50
+
+
+
 /*
  * This function creates the board for the first time
  *
  * Input: board - a 6x9 array of squares
  *
  */
+
 void initialize_board(square board[NUM_ROWS][NUM_COLUMNS]){
 
     for (int i =0; i< NUM_ROWS; i++){
@@ -35,6 +40,7 @@ void initialize_board(square board[NUM_ROWS][NUM_COLUMNS]){
  */
 int initialize_players(player players[]){
     int i=0;
+    char check_morePlayers[Max_Input];
     int morePlayers;
     bool flag[6];
     for (int i = 0; i < 6; i++)
@@ -65,19 +71,34 @@ int initialize_players(player players[]){
 
         colorSelection(players, flag, i);
 
-
-
         /*Asking the player if there is another player*/
         /*This code occurs when at least 2 players have been entered (minimum two are required to play the game )*/
         if (i >= 1 && i < 5) /*Greater or equal to 1 and less than 5*/
         {
             printf("\nIs there another player? (1 for yes, 0 for no): ");
-            do /*Keep asking the user for a valid response which is either 0 or 1; being the only valid responses*/
+            fgets(check_morePlayers, 30, stdin);
+            int k = strlen(check_morePlayers) -1 ;
+            while(1)
             {
-                scanf("%d", &morePlayers);
-            } while (morePlayers != 1 && morePlayers != 0);
+                if( k != 1)
+               {
+                 printf("\nInvalid choice....Is there another player? (1 for yes, 0 for no):");
+                 fgets(check_morePlayers, 30, stdin);
+                 k = strlen(check_morePlayers) - 1;
+               }
+                else
+               {
+                if( check_morePlayers[0] == '0') {morePlayers = 0; break; }
+                else if(check_morePlayers[0] == '1') {morePlayers = 1; break;}
+                else
+                    {
+                        printf("\nInvalid choice....Is there another player? (1 for yes, 0 for no):");
+                        fgets(check_morePlayers, 30, stdin);
+                        k = strlen(check_morePlayers) - 1;
+                    }
+               }
 
-            fgetc(stdin); /*Eating newline*/
+            }
 
             if (morePlayers == 0) /*Case where there is no more players as indicated by the user the return value is 2*/
             {
@@ -89,12 +110,13 @@ int initialize_players(player players[]){
 
 
         return i;
-    }
+     }
 
 //Function that lets users select a colour.
 void colorSelection(player players[], bool flag[], int playerNumb)
 {
     //Declaring variables to store the user's colour choice and each of the options.
+    char check_colourChoice[Max_Input];
     int colourChoice;
     char *colours[6] = {"RED", "BLUE", "GREEN", "YELLOW", "PINK", "ORANGE"};
 
@@ -122,21 +144,36 @@ void colorSelection(player players[], bool flag[], int playerNumb)
             }
         }
         printf("\nEnter choice: ");
-        scanf("%d", &colourChoice);
-        fgetc(stdin); /*Eating the new line*/
+        fgets(check_colourChoice, 30, stdin);
+        int x = strlen(check_colourChoice) - 1;
+            while(1)
+            {
+                if( x != 1)
+               {
+                   printf("You did not enter a valid number....\n");
+                   printf("(Enter 0 for Red, 1 for Blue, 2 for Green, 3 for Yellow, 4 for Pink, 5 for Orange).\n");
+                   fgets(check_colourChoice, 30, stdin);
+                   x = strlen(check_colourChoice) - 1;
+               }
+                else
+               {
+                if( check_colourChoice[0] == '0') {colourChoice = 0; break; }
+                else if(check_colourChoice[0] == '1') {colourChoice = 1; break;}
+                else if(check_colourChoice[0] == '2') {colourChoice = 2; break;}
+                else if(check_colourChoice[0] == '3') {colourChoice = 3; break;}
+                else if(check_colourChoice[0] == '4') {colourChoice = 4; break;}
+                else if(check_colourChoice[0] == '5') {colourChoice = 5; break;}
+                else
+                    {
+                        printf("You did not enter a valid number....\n");
+                        printf("(Enter 0 for Red, 1 for Blue, 2 for Green, 3 for Yellow, 4 for Pink, 5 for Orange).\n");
+                        fgets(check_colourChoice, 30, stdin);
+                        x = strlen(check_colourChoice) - 1;
+                    }
+               }
 
-        while(1)
-        {
-            if( colourChoice < 0 ||  colourChoice > 5)
-            {
-                printf("You did not enter a valid number....\n");
-                printf("(Enter 0 for Red, 1 for Blue, 2 for Green, 3 for Yellow, 4 for Pink, 5 for Orange).\n");
-                scanf("%d", &colourChoice);
-                fgetc(stdin); /*Eating the new line*/
             }
-            else
-            {
-                //Validation check to see if the choice is valid.
+        //Validation check to see if the choice is valid.
         if (flag[colourChoice ] == true)
         {
             printf("\nERROR: Colour already taken.\n");
@@ -202,8 +239,6 @@ void colorSelection(player players[], bool flag[], int playerNumb)
                     break;
                 }
             }
-        } break;
-			}
         }
 
     }
