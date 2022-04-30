@@ -68,15 +68,6 @@ int initialize_players(player players[]);
 /*
  * This function allows the players to select the color of token
  * and prevents selecting the same color.
- * Input:
  *
  */
 void colorSelection(player players[], bool flag[], int playerNumb);
-
-
-
-
-
-
-
-
