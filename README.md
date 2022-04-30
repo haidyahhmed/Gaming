@@ -55,13 +55,13 @@
 
 - **The change of time with the optional move according to the type of the square:**
   - If the player do the optional move while the piece is at **an obstacle square**.
-  **(45.921 usec ~ 4.5921x10^-5 sec)**.
+  **(45.921 usec ~ 45.921x10^-6 sec)**.
   ![1](https://user-images.githubusercontent.com/104447129/166118076-e31438ae-3207-4512-bd01-0b6ad083efbd.png)
 - If the player do the optional move **at his turn** while the piece is at **a normal square**. 
 **(8.711 usec ~ 8.711x10^-6 sec)**.
 ![normal-mine](https://user-images.githubusercontent.com/104447129/166118492-61674b4b-73ad-4571-a284-d8cd82b56565.png)
 - If the player do the optional move **not at his turn** while the piece is at **a normal square**. 
-**(70.478 usec ~ 7.0478x10^-5 sec)**.           
+**(70.478 usec ~ 70.478x10^-6 sec)**.           
 ![normal-not mine](https://user-images.githubusercontent.com/104447129/166119195-4b1df7d7-4364-46cd-8775-b1962790fa83.png)
 
  
