@@ -45,6 +45,7 @@
 
   - In **an obstacle square** it takes much time **(2894000 usec ~ 2.894 sec)**.
 ![Screenshot 2022-04-27 0122491](https://user-images.githubusercontent.com/104442250/165408617-3b0f8025-649c-4b7b-9b8b-116f4b772c3c.png)
+
 - **The change of time with the optional move:**
   If the player do the optional move it will take more time than if he don’t.
   - If the player don’t do it ,the time will be very small **(0.016 usec ~ 1.6x10^-8 sec)**.
@@ -54,14 +55,11 @@
   ![image](https://user-images.githubusercontent.com/103963089/166080934-6c718d89-ce70-43f5-bd81-66886f0c1c6b.png)
 
 - **The change of time with the optional move according to the type of the square:**
-  - If the player do the optional move **at his turn** while the piece is at **a normal square**. 
-**(8.711 usec ~ 8.711x10^-6 sec)**.
+  - If the player do the optional move: **moving his/her token** while the token is at **a normal square**,the time will be small **(8.711 usec ~ 8.711x10^-6 sec)**.
 ![normal-mine](https://user-images.githubusercontent.com/104447129/166118492-61674b4b-73ad-4571-a284-d8cd82b56565.png) 
-  - If the player do the optional move while the piece is at **an obstacle square**.
-  **(45.921 usec ~ 45.921x10^-6 sec)**.
+  - If the player do the optional move: **moving his/her token** while the piece is at **an obstacle square**, the time will increase **(45.921 usec ~ 45.921x10^-6 sec)**.
   ![1](https://user-images.githubusercontent.com/104447129/166118076-e31438ae-3207-4512-bd01-0b6ad083efbd.png)
-  - If the player do the optional move **not at his turn** while the piece is at **a normal square**. 
-**(70.478 usec ~ 70.478x10^-6 sec)**.           
+  - If the player do the optional move: **moving another player's token** (not his/her token), the time will increase **(70.478 usec ~ 70.478x10^-6 sec)**.           
 ![normal-not mine](https://user-images.githubusercontent.com/104447129/166119195-4b1df7d7-4364-46cd-8775-b1962790fa83.png)
 
  
