@@ -62,6 +62,7 @@
 ![normal-mine](https://user-images.githubusercontent.com/104447129/166118492-61674b4b-73ad-4571-a284-d8cd82b56565.png)
 - If the player do the optional move **not at his turn** while the piece is at **a normal square**. 
 **(70.478 usec ~ 7.0478x10^-5 sec)**.           
+
 ![normal-not mine](https://user-images.githubusercontent.com/104447129/166118936-b726ebd1-9984-4e04-b82b-b15758fdce64.png)
  
 
