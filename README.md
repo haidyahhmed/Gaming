@@ -55,7 +55,7 @@
   ![image](https://user-images.githubusercontent.com/103963089/166080934-6c718d89-ce70-43f5-bd81-66886f0c1c6b.png)
 
 - **The change of time with the optional move according to the type of the square:**
-  - If the player do the optional move: **moving his/her token** while the token is at **a normal square**,the time will be small **(8.711 usec ~ 8.711x10^-6 sec)**.
+  - If the player do the optional move: **moving his/her token** while the token is at **a normal square**, the time will be small **(8.711 usec ~ 8.711x10^-6 sec)**.
 ![normal-mine](https://user-images.githubusercontent.com/104447129/166118492-61674b4b-73ad-4571-a284-d8cd82b56565.png) 
   - If the player do the optional move: **moving his/her token** while the piece is at **an obstacle square**, the time will increase **(45.921 usec ~ 45.921x10^-6 sec)**.
   ![1](https://user-images.githubusercontent.com/104447129/166118076-e31438ae-3207-4512-bd01-0b6ad083efbd.png)
