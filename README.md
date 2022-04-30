@@ -53,4 +53,7 @@
   - If the player do it ,the time will increase **(26.1 usec ~ 2.61x10^-5  sec)**.
   ![image](https://user-images.githubusercontent.com/103963089/166080934-6c718d89-ce70-43f5-bd81-66886f0c1c6b.png)
 
+- **The change of time with the optional move according to the type of the square:**
+  - If the player do the optional move while the piece is at **an obstacle square**.
+  
 
