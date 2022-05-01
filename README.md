@@ -48,10 +48,10 @@
 
 - **The change of time with the optional move:**
   If the player do the optional move it will take more time than if he don’t.
-  - If the player don’t do it ,the time will be very small **(0.016 usec ~ 0.0016x10^-5 sec)**.
+  - If the player don’t do it ,the time will be very small **(0.016 sec)**.
   ![image](https://user-images.githubusercontent.com/103963089/166080923-38637642-51f3-495e-a22b-04ed1adc644e.png)
 
-  - If the player do it ,the time will increase **(26.1 usec ~ 2.61x10^-5  sec)**.
+  - If the player do it ,the time will increase **(26.1 sec)**.
   ![image](https://user-images.githubusercontent.com/103963089/166080934-6c718d89-ce70-43f5-bd81-66886f0c1c6b.png)
 
 - **The change of time with the optional move according to the type of the square:**
