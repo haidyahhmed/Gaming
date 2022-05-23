@@ -26,7 +26,7 @@
   - and then moving an piece (either his/her or another player) that in the matching lane with die forward one space.
  - The first player gets three of his/her tokens to the "ziel" is the winner.   
 
-# Time Excution & Parameters
+# Time Execution & Parameters
 - **The change of time with the number of players:**
   The more players there are, the more time the game takes.
   - The time it takes for **two players** to place their tokens **(~ 64.404 sec)**.
